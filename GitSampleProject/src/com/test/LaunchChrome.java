@@ -10,7 +10,7 @@ public class LaunchChrome {
 		// TODO Auto-generated method stub
 
 
-		System.setProperty("webdriver.chrome.driver","/Users/gururaj/Desktop/Training/jars-core/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/youtpath/chromedriver");
 		WebDriver myTestDriver=new ChromeDriver();
 			
 		
