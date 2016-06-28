@@ -1,0 +1,173 @@
+{
+  "testId" : "3-homepage-on-desktop-in-chrome-browser",
+  "name" : "homepage on Desktop in Chrome browser",
+  "report" : {
+    "nodes" : [ {
+      "name" : "selenium chrome http://testapp.galenframework.com 1024x800",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check galensampletest.gspec --include \"\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: galensampletest.gspec included tags: ",
+          "status" : "error",
+          "time" : 1465663166989,
+          "includedTags" : [ ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header",
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 11
+                },
+                "name" : "width 900px",
+                "errors" : [ "\"header\" width is 1009px instead of 900px" ],
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "height ~ 69px",
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "header-icon",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width 48px",
+                "highlight" : [ "header-icon" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "height 48px",
+                "highlight" : [ "header-icon" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "inside header 0px left, 5 to 15px top bottom",
+                "errors" : [ "\"header-icon\" is 54px left instead of 0px" ],
+                "highlight" : [ "header-icon", "header" ]
+              } ]
+            }, {
+              "name" : "header-text",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside header 5 to 22px top bottom",
+                "highlight" : [ "header-text", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "near header-icon 15 to 30px right",
+                "highlight" : [ "header-text", "header-icon" ]
+              } ]
+            }, {
+              "name" : "menu",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "aligned vertically all header",
+                "errors" : [ "\"header\" is not aligned vertically all with \"menu\". Offset is 109px" ],
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "below header 0 to 1px",
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "height ~ 64px",
+                "highlight" : [ "menu" ]
+              } ]
+            }, {
+              "name" : "content",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "aligned vertically all menu",
+                "highlight" : [ "content", "menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "below menu 0 to 1px",
+                "highlight" : [ "content", "menu" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header-icon" : {
+              "area" : [ 54, 13, 48, 48 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 1009, 70 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1009, 733 ]
+            },
+            "header-text" : {
+              "area" : [ 124, 20, 629, 39 ]
+            },
+            "menu" : {
+              "area" : [ 54, 70, 900, 63 ]
+            },
+            "content" : {
+              "area" : [ 54, 133, 900, 450 ]
+            }
+          },
+          "screenshot" : "layout-3-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1465663165477,
+        "type" : "node"
+      } ],
+      "time" : 1465663163632,
+      "type" : "node"
+    } ]
+  }
+}

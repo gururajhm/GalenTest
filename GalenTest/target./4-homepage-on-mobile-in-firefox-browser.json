@@ -1,0 +1,174 @@
+{
+  "testId" : "4-homepage-on-mobile-in-firefox-browser",
+  "name" : "homepage on Mobile in Firefox browser",
+  "report" : {
+    "nodes" : [ {
+      "name" : "selenium firefox http://testapp.galenframework.com 320x600",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check galensampletest.gspec --include \"\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: galensampletest.gspec included tags: ",
+          "status" : "error",
+          "time" : 1465663172057,
+          "includedTags" : [ ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header",
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 11
+                },
+                "name" : "width 900px",
+                "errors" : [ "\"header\" width is 320px instead of 900px" ],
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "height ~ 69px",
+                "errors" : [ "\"header\" height is 109px which is not in range of 67 to 71px" ],
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "header-icon",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width 48px",
+                "highlight" : [ "header-icon" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "height 48px",
+                "highlight" : [ "header-icon" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "inside header 0px left, 5 to 15px top bottom",
+                "errors" : [ "\"header-icon\" is 48px bottom which is not in range of 5 to 15px" ],
+                "highlight" : [ "header-icon", "header" ]
+              } ]
+            }, {
+              "name" : "header-text",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside header 5 to 22px top bottom",
+                "highlight" : [ "header-text", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "near header-icon 15 to 30px right",
+                "highlight" : [ "header-text", "header-icon" ]
+              } ]
+            }, {
+              "name" : "menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "aligned vertically all header",
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "below header 0 to 1px",
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "height ~ 64px",
+                "errors" : [ "\"menu\" height is 128px which is not in range of 62 to 66px" ],
+                "highlight" : [ "menu" ]
+              } ]
+            }, {
+              "name" : "content",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "aligned vertically all menu",
+                "highlight" : [ "content", "menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "below menu 0 to 1px",
+                "highlight" : [ "content", "menu" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header-icon" : {
+              "area" : [ 0, 13, 48, 48 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 320, 109 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 320, 977 ]
+            },
+            "header-text" : {
+              "area" : [ 70, 20, 250, 79 ]
+            },
+            "menu" : {
+              "area" : [ 0, 109, 320, 128 ]
+            },
+            "content" : {
+              "area" : [ 0, 237, 320, 590 ]
+            }
+          },
+          "screenshot" : "layout-4-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1465663171116,
+        "type" : "node"
+      } ],
+      "time" : 1465663167135,
+      "type" : "node"
+    } ]
+  }
+}

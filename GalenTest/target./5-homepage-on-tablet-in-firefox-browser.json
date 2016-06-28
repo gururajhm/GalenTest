@@ -1,0 +1,171 @@
+{
+  "testId" : "5-homepage-on-tablet-in-firefox-browser",
+  "name" : "homepage on Tablet in Firefox browser",
+  "report" : {
+    "nodes" : [ {
+      "name" : "selenium firefox http://testapp.galenframework.com 640x480",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check galensampletest.gspec --include \"\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: galensampletest.gspec included tags: ",
+          "status" : "error",
+          "time" : 1465663176378,
+          "includedTags" : [ ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header",
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 11
+                },
+                "name" : "width 900px",
+                "errors" : [ "\"header\" width is 625px instead of 900px" ],
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "height ~ 69px",
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "header-icon",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width 48px",
+                "highlight" : [ "header-icon" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "height 48px",
+                "highlight" : [ "header-icon" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "inside header 0px left, 5 to 15px top bottom",
+                "highlight" : [ "header-icon", "header" ]
+              } ]
+            }, {
+              "name" : "header-text",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside header 5 to 22px top bottom",
+                "highlight" : [ "header-text", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "near header-icon 15 to 30px right",
+                "highlight" : [ "header-text", "header-icon" ]
+              } ]
+            }, {
+              "name" : "menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "aligned vertically all header",
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "below header 0 to 1px",
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "height ~ 64px",
+                "highlight" : [ "menu" ]
+              } ]
+            }, {
+              "name" : "content",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "aligned vertically all menu",
+                "highlight" : [ "content", "menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galensampletest.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "below menu 0 to 1px",
+                "highlight" : [ "content", "menu" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header-icon" : {
+              "area" : [ 0, 13, 48, 48 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 625, 70 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 625, 734 ]
+            },
+            "header-text" : {
+              "area" : [ 70, 20, 270, 40 ]
+            },
+            "menu" : {
+              "area" : [ 0, 70, 625, 64 ]
+            },
+            "content" : {
+              "area" : [ 0, 134, 625, 450 ]
+            }
+          },
+          "screenshot" : "layout-5-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1465663175632,
+        "type" : "node"
+      } ],
+      "time" : 1465663172192,
+      "type" : "node"
+    } ]
+  }
+}

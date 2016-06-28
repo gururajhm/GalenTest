@@ -1,0 +1,34 @@
+
+to run galen from command prompt 
+
+Gururajs-MacBook-Pro:specs gururaj$ 
+
+galen check galensampletest.gspec --url http://testapp.galenframework.com --size 1200x800 --htmlreport /Users/gururaj/workspace/GalenTest/target.
+
+
+to run on multiple browsers
+
+@@ table browsers
+    | browerName | browser |
+    | Chrome     | chrome  |
+    | Firefox    | firefox |
+@@ table devices
+    | deviceName | tags      | size     |
+    | Mobile     | mobile    | 320x600  |
+    | Tablet     | tablet    | 640x480  |
+    | Desktop    | desktop   | 1024x800 |
+
+@@ parameterized using browsers
+@@ parameterized using devices
+@@ groups homepage
+homepage on ${deviceName} in ${browerName} browser
+  selenium ${browser} ${websiteUrl} ${size}  
+      check galensampletest.gspec --include "${device}"
+
+for multple device run like this
+
+Gururajs-MacBook-Pro:specs gururaj$ galen test runtest.test --htmlreport /Users/gururaj/workspace/GalenTest/target.
+
+Gururajs-MacBook-Pro:specs gururaj$ galen test runtest.test --htmlreport /Users/gururaj/workspace/GalenTest/target.
+
+

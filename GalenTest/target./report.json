@@ -1,0 +1,93 @@
+{
+  "tests" : [ {
+    "name" : "homepage on Mobile in Chrome browser",
+    "startedAt" : 1465663152362,
+    "endedAt" : 1465663158288,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 11,
+      "errors" : 2,
+      "warnings" : 0,
+      "total" : 13
+    },
+    "testId" : "1-homepage-on-mobile-in-chrome-browser",
+    "groups" : [ "homepage" ],
+    "failed" : true,
+    "duration" : 5926
+  }, {
+    "name" : "homepage on Tablet in Chrome browser",
+    "startedAt" : 1465663158289,
+    "endedAt" : 1465663163625,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 12,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 13
+    },
+    "testId" : "2-homepage-on-tablet-in-chrome-browser",
+    "groups" : [ "homepage" ],
+    "failed" : true,
+    "duration" : 5336
+  }, {
+    "name" : "homepage on Desktop in Chrome browser",
+    "startedAt" : 1465663163625,
+    "endedAt" : 1465663167134,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 10,
+      "errors" : 3,
+      "warnings" : 0,
+      "total" : 13
+    },
+    "testId" : "3-homepage-on-desktop-in-chrome-browser",
+    "groups" : [ "homepage" ],
+    "failed" : true,
+    "duration" : 3509
+  }, {
+    "name" : "homepage on Mobile in Firefox browser",
+    "startedAt" : 1465663167134,
+    "endedAt" : 1465663172192,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 9,
+      "errors" : 4,
+      "warnings" : 0,
+      "total" : 13
+    },
+    "testId" : "4-homepage-on-mobile-in-firefox-browser",
+    "groups" : [ "homepage" ],
+    "failed" : true,
+    "duration" : 5058
+  }, {
+    "name" : "homepage on Tablet in Firefox browser",
+    "startedAt" : 1465663172192,
+    "endedAt" : 1465663176516,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 12,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 13
+    },
+    "testId" : "5-homepage-on-tablet-in-firefox-browser",
+    "groups" : [ "homepage" ],
+    "failed" : true,
+    "duration" : 4324
+  }, {
+    "name" : "homepage on Desktop in Firefox browser",
+    "startedAt" : 1465663176516,
+    "endedAt" : 1465663180240,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 10,
+      "errors" : 3,
+      "warnings" : 0,
+      "total" : 13
+    },
+    "testId" : "6-homepage-on-desktop-in-firefox-browser",
+    "groups" : [ "homepage" ],
+    "failed" : true,
+    "duration" : 3724
+  } ]
+}
